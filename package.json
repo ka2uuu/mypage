@@ -6,6 +6,14 @@
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore --fix \"pages/**/{*.ts,*.tsx}\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "pages/**/{*.ts,*.tsx}": "npm run lint"
+  },
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "latest",
@@ -23,6 +31,8 @@
     "@typescript-eslint/parser": "^5.53.0",
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "typescript": "^4.7.4"
   }
 }
