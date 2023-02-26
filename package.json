@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore --fix \"pages/**/{*.ts,*.tsx}\""
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -18,6 +19,10 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2",
     "typescript": "^4.7.4"
   }
 }
