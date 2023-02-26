@@ -1,11 +1,15 @@
-const YEAR = new Date().getFullYear()
+const YEAR = new Date().getFullYear();
+
+const noteFlag = true;
 
 export default {
   footer: (
     <footer>
       <small>
         <time>{YEAR}</time> © Your Name.
-        <a href="/feed.xml">RSS</a>
+        <a href="/feed.xml">
+          RSS<span>in preparation</span>
+        </a>
       </small>
       <style jsx>{`
         footer {
@@ -14,7 +18,11 @@ export default {
         a {
           float: right;
         }
+        span {
+          color: ${noteFlag ? "#f00" : "#0f0"};
+          margin-left: 10px;
+        }
       `}</style>
     </footer>
   ),
-}
+};
