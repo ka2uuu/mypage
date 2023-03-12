@@ -6,10 +6,10 @@ export default {
   footer: (
     <footer>
       <small>
-        <time>{YEAR}</time> © Your Name.
-        <a href="/feed.xml">
+        <time>{YEAR}</time> © k2kois.
+        {/* <a href="/feed.xml">
           RSS<span>in preparation</span>
-        </a>
+        </a> */}
       </small>
       <style jsx>{`
         footer {
